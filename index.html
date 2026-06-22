@@ -19,6 +19,7 @@
             flex-direction: column;
             gap: 16px;
         }
+
         .snack-overlay.active {
             display: flex;
         }
@@ -30,12 +31,13 @@
             background: #1a1a1a;
             border-radius: 44px;
             border: 6px solid #333;
-            box-shadow: 0 0 0 2px #555, 0 30px 80px rgba(0,0,0,0.8);
+            box-shadow: 0 0 0 2px #555, 0 30px 80px rgba(0, 0, 0, 0.8);
             position: relative;
             overflow: hidden;
             display: flex;
             flex-direction: column;
         }
+
         /* Notch */
         .phone-notch {
             width: 120px;
@@ -49,6 +51,7 @@
             z-index: 2;
             border-bottom: 2px solid #333;
         }
+
         /* Side buttons */
         .phone-frame::before {
             content: '';
@@ -61,6 +64,7 @@
             border-radius: 2px 0 0 2px;
             box-shadow: 0 70px 0 #444;
         }
+
         .phone-frame::after {
             content: '';
             position: absolute;
@@ -71,6 +75,7 @@
             background: #444;
             border-radius: 0 2px 2px 0;
         }
+
         .phone-screen {
             flex: 1;
             margin-top: 28px;
@@ -79,6 +84,7 @@
             background: #111;
             position: relative;
         }
+
         .phone-screen iframe {
             width: 100%;
             height: 100%;
@@ -111,6 +117,7 @@
             letter-spacing: 1px;
             transition: background 0.2s;
         }
+
         .snack-close-btn:hover {
             background: #a71d2a;
         }
@@ -220,8 +227,8 @@
                 <p>
                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
                         aria-expanded="false" aria-controls="collapseWidthExample">
-                        <img src=""
-                            style="width: 200px;height: 200px;border-radius: 50%;object-fit: cover;"> <br><br> Luiz Seabra
+                        <img src="" style="width: 200px;height: 200px;border-radius: 50%;object-fit: cover;"> <br><br>
+                        Luiz Seabra
                     </button>
                 </p>
                 <div style="min-height: 120px;">
@@ -247,7 +254,7 @@
         </div>
 
 
-        <ol class="list-group list-group-numbered" data-bs-theme="dark">
+        <ol class="list-group list-group" data-bs-theme="dark">
 
             <!-- 
                 Para adicionar uma atividade:
@@ -259,15 +266,27 @@
 
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                    <div class="fw-bold">Atividade 1</div>
+                    <div class="fw-bold">Atividade 1 - Vinícius</div>
                     Atividade introdutória ao React Native.
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <span class="badge text-bg-danger rounded-pill">01</span>
-                    <button 
-                        class="btn btn-outline-danger btn-sm btn-ver-app"
-                        data-snack-id="@vinicius_oliveira08/7eec6c"
-                        data-titulo="Subheading"
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app"
+                        data-snack-id="@vinicius_oliveira08/7eec6c" data-titulo="Subheading" onclick="abrirSnack(this)">
+                        ▶ Ver app
+                    </button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Atividade 1 - Luiz Miguel</div>
+                    Atividade introdutória ao React Native.
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge text-bg-danger rounded-pill">01</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app"
+                        data-snack-id="@luizmiguelsss/visualmente-agradavel" data-titulo="Subheading"
                         onclick="abrirSnack(this)">
                         ▶ Ver app
                     </button>
@@ -276,16 +295,13 @@
 
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                    <div class="fw-bold">Atividade 1</div>
-                    Atividade introdutória ao React Native.
+                    <div class="fw-bold">Atividade 2 - RPG - Vinícius</div>
+                    Atividade sobre layout.
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <span class="badge text-bg-danger rounded-pill">02</span>
-                    <button 
-                        class="btn btn-outline-danger btn-sm btn-ver-app"
-                        data-snack-id="@luizmiguelsss/visualmente-agradavel"
-                        data-titulo="Subheading"
-                        onclick="abrirSnack(this)">
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app" data-snack-id="@vinicius_oliveira08/rpg"
+                        data-titulo="Subheading" onclick="abrirSnack(this)">
                         ▶ Ver app
                     </button>
                 </div>
@@ -297,17 +313,14 @@
                     RPG
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                    <span class="badge text-bg-danger rounded-pill">03</span>
-                    <button 
-                        class="btn btn-outline-danger btn-sm btn-ver-app"
-                        data-snack-id="@luizmiguelsss/exbotao"
-                        data-titulo="Subheading"
-                        onclick="abrirSnack(this)">
+                    <span class="badge text-bg-danger rounded-pill">02</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app" data-snack-id="@luizmiguelsss/exbotao"
+                        data-titulo="Subheading" onclick="abrirSnack(this)">
                         ▶ Ver app
                     </button>
                 </div>
             </li>
-            
+
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                     <div class="fw-bold">Atividade fato</div>
@@ -315,44 +328,99 @@
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <span class="badge text-bg-danger rounded-pill">03</span>
-                    <button 
-                        class="btn btn-outline-danger btn-sm btn-ver-app"
-                        data-snack-id="@luizmiguelsss/botao"
-                        data-titulo="Subheading"
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app" data-snack-id="@luizmiguelsss/botao"
+                        data-titulo="Subheading" onclick="abrirSnack(this)">
+                        ▶ Ver app
+                    </button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Atividade Fato - Vinícius</div>
+                    Fato interessante - Botão
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge text-bg-danger rounded-pill">03</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app"
+                        data-snack-id="@vinicius_oliveira08/atividade-fato" data-titulo="Subheading"
                         onclick="abrirSnack(this)">
                         ▶ Ver app
                     </button>
                 </div>
             </li>
 
-             <li class="list-group-item d-flex justify-content-between align-items-start">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
-                    <div class="fw-bold">Flat list copa</div>
-                    Flat list da copa do mundo de futebol
+                    <div class="fw-bold">Paginação com Renderização - Vinícius</div>
+                    Implementar um aplicativo em Expo React que mostre um menu contendo botões para mostrar 8 filmes que
+                    estão em cartaz.
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                    <span class="badge text-bg-danger rounded-pill">03</span>
-                    <button 
-                        class="btn btn-outline-danger btn-sm btn-ver-app"
-                        data-snack-id="@luizmiguelsss/alalaa"
-                        data-titulo="Subheading"
+                    <span class="badge text-bg-danger rounded-pill">04</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app"
+                        data-snack-id="@vinicius_oliveira08/paginacao-com-renderizacao" data-titulo="Subheading"
                         onclick="abrirSnack(this)">
                         ▶ Ver app
                     </button>
                 </div>
             </li>
-            
-             <li class="list-group-item d-flex justify-content-between align-items-start">
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Flat list copa</div>
+                    Flat list da copa do mundo de futebol
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge text-bg-danger rounded-pill">05</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app" data-snack-id="@luizmiguelsss/alalaa"
+                        data-titulo="Subheading" onclick="abrirSnack(this)">
+                        ▶ Ver app
+                    </button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Flat list Copa do Mundo - Vinícius</div>
+                    Com base no exemplo de FlatList, adaptar para que mostre os países que estão na copa do mundo de
+                    2026 (pelo menos 10).
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge text-bg-danger rounded-pill">05</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app"
+                        data-snack-id="@vinicius_oliveira08/copa-do-mundo" data-titulo="Subheading"
+                        onclick="abrirSnack(this)">
+                        ▶ Ver app
+                    </button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                     <div class="fw-bold">Atividade navegação de telas</div>
                     Troca de telas futebol
                 </div>
                 <div class="d-flex align-items-center gap-2">
-                    <span class="badge text-bg-danger rounded-pill">03</span>
-                    <button 
-                        class="btn btn-outline-danger btn-sm btn-ver-app"
-                        data-snack-id="@luizmiguelsss/navegacaodetelas2"
-                        data-titulo="Subheading"
+                    <span class="badge text-bg-danger rounded-pill">06</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app"
+                        data-snack-id="@luizmiguelsss/navegacaodetelas2" data-titulo="Subheading"
+                        onclick="abrirSnack(this)">
+                        ▶ Ver app
+                    </button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Paginação com template de navegação - Vinícius</div>
+                    Utilizando como base o vídeo que explica a navegação com uso de template (que aplica componentes do
+                    React para navegação com rota).
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge text-bg-danger rounded-pill">06</span>
+                    <button class="btn btn-outline-danger btn-sm btn-ver-app"
+                        data-snack-id="@vinicius_oliveira08/00bfc8" data-titulo="Subheading"
                         onclick="abrirSnack(this)">
                         ▶ Ver app
                     </button>
@@ -386,7 +454,7 @@
     <script>
         function abrirSnack(botao) {
             const snackId = botao.getAttribute('data-snack-id');
-            const titulo  = botao.getAttribute('data-titulo');
+            const titulo = botao.getAttribute('data-titulo');
             const container = document.getElementById('snackContainer');
 
             container.innerHTML = '';
@@ -401,7 +469,7 @@
             iframe.allow = 'geolocation; camera; microphone';
 
             // Quando o iframe carregar, injeta CSS para esconder o editor e deixar só o preview
-            iframe.onload = function() {
+            iframe.onload = function () {
                 try {
                     const style = iframe.contentDocument.createElement('style');
                     style.textContent = `
@@ -417,7 +485,7 @@
                         }
                     `;
                     iframe.contentDocument.head.appendChild(style);
-                } catch(e) {
+                } catch (e) {
                     // Cross-origin bloqueado em file:// — funciona normalmente quando hospedado
                 }
             };
@@ -436,7 +504,7 @@
             document.body.style.overflow = '';
         }
 
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') fecharSnack();
         });
     </script>
